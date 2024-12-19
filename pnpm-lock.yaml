@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@astrojs/netlify':
         specifier: ^5.5.3
-        version: 5.5.4(@types/node@22.10.2)(astro@4.16.17(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2))
+        version: 5.5.4(@types/node@22.10.2)(astro@4.16.18(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2))
       '@astrojs/tailwind':
         specifier: ^5.1.1
-        version: 5.1.3(astro@4.16.17(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2))(tailwindcss@3.4.16)
+        version: 5.1.3(astro@4.16.18(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2))(tailwindcss@3.4.16)
       '@libsql/client':
         specifier: ^0.3.5
         version: 0.3.6
@@ -21,8 +21,8 @@ importers:
         specifier: ^21.0.2
         version: 21.0.2
       astro:
-        specifier: ^4.15.12
-        version: 4.16.17(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2)
+        specifier: ^4.16.18
+        version: 4.16.18(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2)
       daisyui:
         specifier: ^3.9.2
         version: 3.9.4
@@ -1227,8 +1227,8 @@ packages:
     resolution: {integrity: sha512-yTgzioUI9MKgBF4LxP7YI+uuZLrnXgHDeW4dpa3VqCNbDmPzL7ix93tc0JJIwWGcskoSAAHZZVaBSp8bHyZZZA==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  astro@4.16.17:
-    resolution: {integrity: sha512-OuD+BP7U6OqQLKtZ/FJkU2S+TOlifxS/OKUbZOb5p6y+LLBa1J3zHRJrIl7DUSq6eXY+9wSWwbJpD9JS+lqhxA==}
+  astro@4.16.18:
+    resolution: {integrity: sha512-G7zfwJt9BDHEZwlaLNvjbInIw2hPryyD654314KV/XT34pJU6SfN1S+mWa8RAkALcZNJnJXCJmT3JXLQStD3Lw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3135,13 +3135,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/netlify@5.5.4(@types/node@22.10.2)(astro@4.16.17(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2))':
+  '@astrojs/netlify@5.5.4(@types/node@22.10.2)(astro@4.16.18(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2))':
     dependencies:
       '@astrojs/internal-helpers': 0.4.1
       '@astrojs/underscore-redirects': 0.3.4
       '@netlify/functions': 2.8.2
       '@vercel/nft': 0.27.5
-      astro: 4.16.17(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2)
+      astro: 4.16.18(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2)
       esbuild: 0.21.5
       vite: 5.4.10(@types/node@22.10.2)
     transitivePeerDependencies:
@@ -3160,9 +3160,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.3(astro@4.16.17(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2))(tailwindcss@3.4.16)':
+  '@astrojs/tailwind@5.1.3(astro@4.16.18(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2))(tailwindcss@3.4.16)':
     dependencies:
-      astro: 4.16.17(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2)
+      astro: 4.16.18(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2)
       autoprefixer: 10.4.20(postcss@8.4.49)
       postcss: 8.4.49
       postcss-load-config: 4.0.2(postcss@8.4.49)
@@ -3458,7 +3458,7 @@ snapshots:
   '@eslint/eslintrc@2.1.4':
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.7
+      debug: 4.4.0
       espree: 9.6.1
       globals: 13.24.0
       ignore: 5.3.2
@@ -3474,7 +3474,7 @@ snapshots:
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
-      debug: 4.3.7
+      debug: 4.4.0
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -4018,7 +4018,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/typescript-estree': 6.21.0(typescript@5.7.2)
       '@typescript-eslint/utils': 6.21.0(eslint@8.57.1)(typescript@5.7.2)
-      debug: 4.3.7
+      debug: 4.4.0
       eslint: 8.57.1
       ts-api-utils: 1.3.0(typescript@5.7.2)
     optionalDependencies:
@@ -4048,7 +4048,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 6.21.0
       '@typescript-eslint/visitor-keys': 6.21.0
-      debug: 4.3.7
+      debug: 4.4.0
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.3
@@ -4198,7 +4198,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.16.17(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2):
+  astro@4.16.18(@types/node@22.10.2)(rollup@4.28.1)(typescript@5.7.2):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
