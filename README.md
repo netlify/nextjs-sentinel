@@ -27,8 +27,3 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm run test`      | Run all checks, including typechecking & eslint            |
 | `pnpm run preview`   | Preview your build locally, before deploying               |
 | `pnpm run migrate`   | Fetch recent releases, analyze them, and seed the database |
-
-### Contributing
-
-The release data is in a plain JSON file in `src/data/releases.json`. Feel free
-to send PRs with updates.
