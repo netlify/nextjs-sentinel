@@ -31,7 +31,7 @@ importers:
         version: 2.30.0
       openai:
         specifier: ^4.0.0
-        version: 4.88.0(ws@8.18.0)(zod@3.24.1)
+        version: 4.94.0(ws@8.18.0)(zod@3.24.1)
     devDependencies:
       '@netlify/functions':
         specifier: ^3.0.4
@@ -2383,8 +2383,8 @@ packages:
   oniguruma-to-es@0.8.0:
     resolution: {integrity: sha512-rY+/a6b+uCgoYIL9itjY0x99UUDHXmGaw7Jjk5ZvM/3cxDJifyxFr/Zm4tTmF6Tre18gAakJo7AzhKUeMNLgHA==}
 
-  openai@4.88.0:
-    resolution: {integrity: sha512-Ll2ZJCdX/56WcCF/wLtAFou+zWRyLeneoXy+qya5T5/wm5LkIr6heJfSn53c5ujXWPB+24cgumiOetbFqcppFA==}
+  openai@4.94.0:
+    resolution: {integrity: sha512-WVmr9HWcwfouLJ7R3UHd2A93ClezTPuJljQxkCYQAL15Sjyt+FBNoqEz5MHSdH/ebQrVyvRhFyn/bvdqtSPyIA==}
     hasBin: true
     peerDependencies:
       ws: ^8.18.0
@@ -5716,7 +5716,7 @@ snapshots:
       regex: 5.0.2
       regex-recursion: 5.0.0
 
-  openai@4.88.0(ws@8.18.0)(zod@3.24.1):
+  openai@4.94.0(ws@8.18.0)(zod@3.24.1):
     dependencies:
       '@types/node': 18.19.86
       '@types/node-fetch': 2.6.12
