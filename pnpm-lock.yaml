@@ -34,8 +34,8 @@ importers:
         version: 4.100.0(ws@8.18.0)(zod@3.24.1)
     devDependencies:
       '@netlify/functions':
-        specifier: ^3.1.9
-        version: 3.1.9(rollup@4.28.1)
+        specifier: ^3.1.10
+        version: 3.1.10(rollup@4.28.1)
       '@types/node':
         specifier: ^22.0.0
         version: 22.15.21
@@ -894,8 +894,8 @@ packages:
     resolution: {integrity: sha512-DeoAQh8LuNPvBE4qsKlezjKj0PyXDryOFJfJKo3Z1qZLKzQ21sT314KQKPVjfvw6knqijj+IO+0kHXy/TJiqNA==}
     engines: {node: '>=14.0.0'}
 
-  '@netlify/functions@3.1.9':
-    resolution: {integrity: sha512-mbmQIylPzOTDicMFbJF839W3bywJVR0Fm77uvjS6AkDl000VlLwQb+4eO3p0BV7j8+l5IgN/3ltQ/Byi/esTEQ==}
+  '@netlify/functions@3.1.10':
+    resolution: {integrity: sha512-sI93kcJ2cUoMgDRPnrEm0lZhuiDVDqM6ngS/UbHTApIH3+eg3yZM5p/0SDFQQq9Bad0/srFmgBmTdXushzY5kg==}
     engines: {node: '>=14.0.0'}
 
   '@netlify/node-cookies@0.1.0':
@@ -4222,7 +4222,7 @@ snapshots:
 
   '@babel/generator@7.26.3':
     dependencies:
-      '@babel/parser': 7.26.3
+      '@babel/parser': 7.27.2
       '@babel/types': 7.27.1
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
@@ -4304,14 +4304,14 @@ snapshots:
   '@babel/template@7.25.9':
     dependencies:
       '@babel/code-frame': 7.26.2
-      '@babel/parser': 7.26.3
+      '@babel/parser': 7.27.2
       '@babel/types': 7.27.1
 
   '@babel/traverse@7.26.4':
     dependencies:
       '@babel/code-frame': 7.26.2
       '@babel/generator': 7.26.3
-      '@babel/parser': 7.26.3
+      '@babel/parser': 7.27.2
       '@babel/template': 7.25.9
       '@babel/types': 7.27.1
       debug: 4.4.0
@@ -4811,7 +4811,7 @@ snapshots:
     dependencies:
       '@netlify/serverless-functions-api': 1.26.1
 
-  '@netlify/functions@3.1.9(rollup@4.28.1)':
+  '@netlify/functions@3.1.10(rollup@4.28.1)':
     dependencies:
       '@netlify/blobs': 9.1.2
       '@netlify/dev-utils': 2.2.0
@@ -4845,7 +4845,7 @@ snapshots:
 
   '@netlify/zip-it-and-ship-it@12.1.0(rollup@4.28.1)':
     dependencies:
-      '@babel/parser': 7.26.3
+      '@babel/parser': 7.27.2
       '@babel/types': 7.27.1
       '@netlify/binary-info': 1.0.0
       '@netlify/serverless-functions-api': 1.41.2
@@ -5138,7 +5138,7 @@ snapshots:
 
   '@types/babel__template@7.4.4':
     dependencies:
-      '@babel/parser': 7.26.3
+      '@babel/parser': 7.27.2
       '@babel/types': 7.27.1
 
   '@types/babel__traverse@7.20.6':
@@ -5960,11 +5960,11 @@ snapshots:
     dependencies:
       node-source-walk: 7.0.1
 
-  detective-postcss@7.0.1(postcss@8.5.1):
+  detective-postcss@7.0.1(postcss@8.5.3):
     dependencies:
       is-url: 1.2.4
-      postcss: 8.5.1
-      postcss-values-parser: 6.0.2(postcss@8.5.1)
+      postcss: 8.5.3
+      postcss-values-parser: 6.0.2(postcss@8.5.3)
 
   detective-sass@6.0.1:
     dependencies:
@@ -7599,11 +7599,11 @@ snapshots:
 
   postcss-value-parser@4.2.0: {}
 
-  postcss-values-parser@6.0.2(postcss@8.5.1):
+  postcss-values-parser@6.0.2(postcss@8.5.3):
     dependencies:
       color-name: 1.1.4
       is-url-superb: 4.0.0
-      postcss: 8.5.1
+      postcss: 8.5.3
       quote-unquote: 1.0.0
 
   postcss@8.4.47:
@@ -7637,7 +7637,7 @@ snapshots:
       detective-amd: 6.0.1
       detective-cjs: 6.0.1
       detective-es6: 5.0.1
-      detective-postcss: 7.0.1(postcss@8.5.1)
+      detective-postcss: 7.0.1(postcss@8.5.3)
       detective-sass: 6.0.1
       detective-scss: 5.0.1
       detective-stylus: 5.0.1
@@ -7645,7 +7645,7 @@ snapshots:
       detective-vue2: 2.2.0(typescript@5.8.3)
       module-definition: 6.0.1
       node-source-walk: 7.0.1
-      postcss: 8.5.1
+      postcss: 8.5.3
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
