@@ -31,7 +31,7 @@ importers:
         version: 2.30.0
       openai:
         specifier: ^4.0.0
-        version: 4.100.0(ws@8.18.0)(zod@3.24.1)
+        version: 4.103.0(ws@8.18.0)(zod@3.24.1)
     devDependencies:
       '@netlify/functions':
         specifier: ^3.1.10
@@ -1260,8 +1260,8 @@ packages:
   '@types/node-fetch@2.6.12':
     resolution: {integrity: sha512-8nneRWKCg3rMtF69nLQJnOYUcbafYeFSjqkw3jCRLsqkWFlHaoQrr5mXmofFGOx3DKn7UfmBMyov8ySvLRVldA==}
 
-  '@types/node@18.19.103':
-    resolution: {integrity: sha512-hHTHp+sEz6SxFsp+SA+Tqrua3AbmlAw+Y//aEwdHrdZkYVRWdvWD3y5uPZ0flYOkgskaFWqZ/YGFm3FaFQ0pRw==}
+  '@types/node@18.19.104':
+    resolution: {integrity: sha512-mqjoYx1RjmN61vjnHWfiWzAlwvBKutoUdm+kYLPnjI5DCh8ZqofUhaTbT3WLl7bt3itR8DuCf8ShnxI0JvIC3g==}
 
   '@types/node@22.15.21':
     resolution: {integrity: sha512-EV/37Td6c+MgKAbkcLG6vqZ2zEYHD7bvSrzqqs2RIhbA6w3x+Dqz8MZM3sP6kGTeLrdoOgKZe+Xja7tUB2DNkQ==}
@@ -3085,8 +3085,8 @@ packages:
   oniguruma-to-es@0.8.0:
     resolution: {integrity: sha512-rY+/a6b+uCgoYIL9itjY0x99UUDHXmGaw7Jjk5ZvM/3cxDJifyxFr/Zm4tTmF6Tre18gAakJo7AzhKUeMNLgHA==}
 
-  openai@4.100.0:
-    resolution: {integrity: sha512-9soq/wukv3utxcuD7TWFqKdKp0INWdeyhUCvxwrne5KwnxaCp4eHL4GdT/tMFhYolxgNhxFzg5GFwM331Z5CZg==}
+  openai@4.103.0:
+    resolution: {integrity: sha512-eWcz9kdurkGOFDtd5ySS5y251H2uBgq9+1a2lTBnjMMzlexJ40Am5t6Mu76SSE87VvitPa0dkIAp75F+dZVC0g==}
     hasBin: true
     peerDependencies:
       ws: ^8.18.0
@@ -5174,7 +5174,7 @@ snapshots:
       '@types/node': 22.15.21
       form-data: 4.0.2
 
-  '@types/node@18.19.103':
+  '@types/node@18.19.104':
     dependencies:
       undici-types: 5.26.5
 
@@ -7409,9 +7409,9 @@ snapshots:
       regex: 5.0.2
       regex-recursion: 5.0.0
 
-  openai@4.100.0(ws@8.18.0)(zod@3.24.1):
+  openai@4.103.0(ws@8.18.0)(zod@3.24.1):
     dependencies:
-      '@types/node': 18.19.103
+      '@types/node': 18.19.104
       '@types/node-fetch': 2.6.12
       abort-controller: 3.0.0
       agentkeepalive: 4.6.0
