@@ -31,7 +31,7 @@ importers:
         version: 2.30.0
       openai:
         specifier: ^4.0.0
-        version: 4.103.0(ws@8.18.0)(zod@3.24.1)
+        version: 4.104.0(ws@8.18.0)(zod@3.24.1)
     devDependencies:
       '@netlify/functions':
         specifier: ^3.1.10
@@ -2264,8 +2264,8 @@ packages:
   form-data-encoder@1.7.2:
     resolution: {integrity: sha512-qfqtYan3rxrnCk1VYaA4H+Ms9xdpPqvLZa6xmMgFvhO32x7/3J/ExcTd6qpxM0vH2GdMI+poehyBZvqfMTto8A==}
 
-  form-data@4.0.2:
-    resolution: {integrity: sha512-hGfm/slu0ZabnNt4oaRZ6uREyfCj6P4fT/n6A1rGV+Z0VdGXjfOhVUpkn6qVQONHGIFwmveGXyDs75+nr6FM8w==}
+  form-data@4.0.3:
+    resolution: {integrity: sha512-qsITQPfmvMOSAdeyZ+12I1c+CKSstAFAwu+97zrnWAbIr5u8wfsExUzCesVLC8NgHuRUqNN4Zy6UPWUTRGslcA==}
     engines: {node: '>= 6'}
 
   formdata-node@4.4.1:
@@ -3085,8 +3085,8 @@ packages:
   oniguruma-to-es@0.8.0:
     resolution: {integrity: sha512-rY+/a6b+uCgoYIL9itjY0x99UUDHXmGaw7Jjk5ZvM/3cxDJifyxFr/Zm4tTmF6Tre18gAakJo7AzhKUeMNLgHA==}
 
-  openai@4.103.0:
-    resolution: {integrity: sha512-eWcz9kdurkGOFDtd5ySS5y251H2uBgq9+1a2lTBnjMMzlexJ40Am5t6Mu76SSE87VvitPa0dkIAp75F+dZVC0g==}
+  openai@4.104.0:
+    resolution: {integrity: sha512-p99EFNsA/yX6UhVO93f5kJsDRLAg+CTA2RBqdHK4RtK8u5IJw32Hyb2dTGKbnnFmnuoBv5r7Z2CURI9sGZpSuA==}
     hasBin: true
     peerDependencies:
       ws: ^8.18.0
@@ -5172,7 +5172,7 @@ snapshots:
   '@types/node-fetch@2.6.12':
     dependencies:
       '@types/node': 22.15.31
-      form-data: 4.0.2
+      form-data: 4.0.3
 
   '@types/node@18.19.111':
     dependencies:
@@ -6406,11 +6406,12 @@ snapshots:
 
   form-data-encoder@1.7.2: {}
 
-  form-data@4.0.2:
+  form-data@4.0.3:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
       es-set-tostringtag: 2.1.0
+      hasown: 2.0.2
       mime-types: 2.1.35
 
   formdata-node@4.4.1:
@@ -7409,7 +7410,7 @@ snapshots:
       regex: 5.0.2
       regex-recursion: 5.0.0
 
-  openai@4.103.0(ws@8.18.0)(zod@3.24.1):
+  openai@4.104.0(ws@8.18.0)(zod@3.24.1):
     dependencies:
       '@types/node': 18.19.111
       '@types/node-fetch': 2.6.12
