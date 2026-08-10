@@ -40,63 +40,72 @@ Astro.response.headers.set(
     </div>
     <div class="space-y-12">
       {
-        releases.map((release) => (
-          <div
-            class={`card bg-base-200 shadow-xl transition-all hover:shadow-2xl ${
-              release.score > 60 ? "border-l-8 border-error" : ""
-            }`}
-          >
-            <div class="card-body">
-              <h2 class="card-title text-2xl">
-                <a
-                  href={release.releaseLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="hover:underline cursor-pointer"
-                >
-                  {release.version}
-                </a>
-              </h2>
-              <div class="flex justify-between items-center">
-                <div
-                  class="badge badge-lg"
-                  style={`background-color: hsl(${120 - release.score * 1.2}, 100%, 50%); color: ${release.score > 50 ? "white" : "black"};`}
-                >
-                  Impact Score: {release.score}
-                </div>
-                <div class="text-sm opacity-70">
-                  {formatDistanceToNow(new Date(release.analyzed_at))} ago
-                </div>
-              </div>
-              <p class="mt-4 text-base-content">{release.summary}</p>
-              <div class="mt-6">
-                <h3 class="font-semibold text-lg mb-2">
-                  Relevance to Netlify:
-                </h3>
-                <p class="text-base-content">{release.relevance}</p>
-              </div>
-              {release.relevantPRs.length > 0 && (
-                <div class="mt-4">
-                  <h3 class="font-semibold text-lg mb-2">Relevant PRs:</h3>
-                  <ul class="list-disc list-inside">
-                    {release.relevantPRs.map((pr) => (
-                      <li>
-                        <a
-                          href={pr}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="hover:underline"
-                        >
-                          #{pr.split("/").pop()}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+        releases.length === 0 ? (
+          <div class="card bg-base-200 shadow-xl">
+            <div class="card-body text-center">
+              <h2 class="card-title text-2xl justify-center">No releases yet</h2>
+              <p class="text-base-content">Check back soon for Next.js release analysis!</p>
             </div>
           </div>
-        ))
+        ) : (
+          releases.map((release) => (
+            <div
+              class={`card bg-base-200 shadow-xl transition-all hover:shadow-2xl ${
+                release.score > 60 ? "border-l-8 border-error" : ""
+              }`}
+            >
+              <div class="card-body">
+                <h2 class="card-title text-2xl">
+                  <a
+                    href={release.releaseLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:underline cursor-pointer"
+                  >
+                    {release.version}
+                  </a>
+                </h2>
+                <div class="flex justify-between items-center">
+                  <div
+                    class="badge badge-lg"
+                    style={`background-color: hsl(${120 - release.score * 1.2}, 100%, 50%); color: ${release.score > 50 ? "white" : "black"};`}
+                  >
+                    Impact Score: {release.score}
+                  </div>
+                  <div class="text-sm opacity-70">
+                    {formatDistanceToNow(new Date(release.analyzed_at))} ago
+                  </div>
+                </div>
+                <p class="mt-4 text-base-content">{release.summary}</p>
+                <div class="mt-6">
+                  <h3 class="font-semibold text-lg mb-2">
+                    Relevance to Netlify:
+                  </h3>
+                  <p class="text-base-content">{release.relevance}</p>
+                </div>
+                {release.relevantPRs.length > 0 && (
+                  <div class="mt-4">
+                    <h3 class="font-semibold text-lg mb-2">Relevant PRs:</h3>
+                    <ul class="list-disc list-inside">
+                      {release.relevantPRs.map((pr) => (
+                        <li>
+                          <a
+                            href={pr}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="hover:underline"
+                          >
+                            #{pr.split("/").pop()}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))
+        )
       }
     </div>
   </main>
